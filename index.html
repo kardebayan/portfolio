@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debayan Kar</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Debayan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Debayan</span>
+                <div>
+                    and I am a passionate
+                </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="DebayanCV_17032025.pdf">
+                        <button class="btn">Download Resume</button>
+                    </a>
+                    <a href="https://github.com/kardebayan">
+                        <button class="btn">Visit Github</button>
+                    </a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+
+        <hr>
+        <section class="secondSection">
+            <span class="textgray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-title">
+                        LineageOS Maintainer (2023 - Present)
+                    </div>
+                    <div class="vertical-desc">
+                        I have successfully brought up LineageOS 20, based on Android 13, for the 10.or G device, which
+                        originally launched in 2017 with Android 7.0 Nougat.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-rights">
+            All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'AOSP Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
