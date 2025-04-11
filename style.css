@@ -52,16 +52,56 @@ nav ul li a:hover {
 }
 
 .leftSection .buttons {
-    padding: 50px 0;
+    display: flex;
+    gap: 20px;
+    margin-top: 45px; /* Space between text and buttons */
+
 }
-.leftSection .btn{
-    padding: 12px;
-    background: #1e2167;
+
+.leftSection .btn {
+    width: 160px;
+    height: 50px;
+    background: linear-gradient(135deg, #1e2167, #5a49ff);
     color: white;
-    border: 2px solid white;
-    border-radius: 6px;
-    font-size: 20px;
+    border-radius: 35px;
+    border: none;
+    outline: none;
     cursor: pointer;
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+
+}
+
+/* ✨ Button Hover Effect */
+.leftSection .btn:hover {
+    background: linear-gradient(135deg, #5a49ff, #1e2167);
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(90, 73, 255, 0.4);
+}
+
+/* ✨ Ripple Effect on Click */
+.leftSection .btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 4px 8px rgba(90, 73, 255, 0.4);
+}
+
+/* ✨ Button Text Animation */
+.leftSection .btn span {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.leftSection .btn:hover span {
+    transform: translateY(-2px);
 }
 
 .rightSection img {
@@ -80,7 +120,7 @@ nav ul li a:hover {
 .secondSection {
     max-width: 80vw;
     margin: auto;
-    height: 80vh;
+    height: 38vh;
 }
 
 main hr {
@@ -125,7 +165,7 @@ main hr {
 
 footer {
     background-color: #111125;
-    height: 30px;
+    height: 25px;
 }
 
 footer .footer-rights {
